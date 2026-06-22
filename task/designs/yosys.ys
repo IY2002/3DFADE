@@ -12,7 +12,7 @@ read_verilog -lib -specify ${YOSYS_BRAM_CELL_SIM}
 # Prepare for synthesis
 #########################
 # Identify top module from hierarchy
-hierarchy -check -top ${TOP_MODULE}
+hierarchy -check -auto-top #-top ${TOP_MODULE}
 # - Convert process blocks to AST
 proc
 # Flatten all the gates/primitives
